@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candev</title>
+<link rel="stylesheet" href="style.css">
+<link id="favicon" rel="icon" href="Logo/NovaLogoR.png" type="image/png">
+</head>
+<body>
+    <audio id="theme" autoplay muted>
+<source src="Sons/Som_principal_CANDEV.mp3" type="audio/mpeg">
+    
+</audio>
+<script>
+document.addEventListener('click', () => {
+  const audio = document.getElementById('theme');
+  audio.muted = false;
+  audio.currentTime = 0;
+  audio.play();
+}, { once: true });
+</script>
+
+<div id="upbar">
+  <img src="Logo/NovaLogo.png" id="logo">
+
+  <nav id="infos">
+    <ul>
+      <li>Suporte</li>
+      <li>Como trabalhamos</li>
+      <li>Equipe</li>
+      <li>Sobre</li>
+    </ul>
+  </nav>
+<button id="contratar">Contratar</button>
+</div>
+
+
+
+</body>
+</html>
