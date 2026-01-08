@@ -2,7 +2,7 @@
 "rewrites": [
 {
 "source": "/contratar",
-"destination": "Contratar/contratar.html"
+"destination": "/contratar.html"
 
 }
 
