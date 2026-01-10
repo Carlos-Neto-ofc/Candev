@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montaser:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body{
 background-color: #d9d9d9;
@@ -22,6 +22,7 @@ align-items: center;
 justify-content: center;
 gap: 10px;
 grid-template-columns: repeat(5, 1fr);
+z-index: 10;
 }
 #verify.show{
 transform: translateY(-240px);
@@ -181,6 +182,8 @@ display: none;
 cursor: pointer;
 text-align: center;
 left: 05px;
+overflow-y: auto;
+max-height: 140px;
 }
 #optionsd li{
 padding: 5px;
@@ -193,7 +196,7 @@ text-align: center;
     background-color: rgba(0, 0, 210, 100%);
 }
 #optionsd.appears{
-display: flex;
+display: block;
 }
 #idade{
 color: white;
@@ -205,6 +208,20 @@ top: 50px;
 font-weight: 600;
 font-size: 130%;
 }
+#optionsd::-webkit-scrollbar{
+width: 10px;
+
+}
+#optionsd::-webkit-scrollbar-track{
+background: transparent;
+}
+#optionsd::-webkit-scrollbar-thumb{
+background: rgba(255, 255, 255, 16);
+border-radius: 10px;
+max-height: 1px;
+
+}
+
 #selectm{
 font-family: 'Poppins', sans-serif;
     width: 120px;
@@ -232,7 +249,7 @@ margin-top: 6px;
 background: blue;
 border-radius: 12px;
 position: absolute;
-width: 80px;
+width: 100px;
 color: white;
 display: none;
 cursor: pointer;
@@ -240,6 +257,7 @@ text-align: center;
 max-height: 160px;
 overflow-y: auto;
 outline: none;
+z-index: 300;
 }
 #optionsm li{
 padding: 5px;
@@ -274,11 +292,76 @@ position: relative;
 left: 70px;
 }
 #overlay{
+  width: 100%;
+  height: 100%;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.5);
   opacity: 0;
   pointer-events: none;
   transition: opacity .4s ease;
   z-index: 5;
+}
+#idadei{
+display: flex;
+justify-content: center;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+font-size: 85%;
+color: white;
+position: relative;
+top: 4px;
+
+z-index: 203;
+}
+#alertas{
+width: 150px;
+height: 50px;
+background-color: red;
+border-radius: 50px 6px 50px 50px ;
+position: fixed;
+left: 610px;
+top: 650px;
+z-index: 100;
+opacity: 0;
+transition: opacity .2s ease;
+}
+#x{
+position: fixed;
+color: rgba(155, 0, 0, 60%);
+font-family: 'Montserrat', sans-serif;
+font-size: 100%;
+top: 638px;
+z-index: 600;
+left: 740px;
+cursor:pointer ;
+}
+#xover{
+  width: 17px;
+  height:17px;
+  background-color: rgba(255, 255, 255, 0.4);
+
+z-index: 700;
+border-radius: 50px;
+transition: opacity .2s ease;
+cursor:pointer;
+opacity: 0;
+}
+#thejunction{
+  position: fixed;
+top: 654px;
+left: 736px;
+}
+#thejunction:hover #xover{
+  opacity: 1;
+}
+#thejunction.des{
+opacity: 0;
+}
+#alertas.des{
+opacity: 0;
+}
+#alertas.menor{
+opacity: 1;
+
 }
