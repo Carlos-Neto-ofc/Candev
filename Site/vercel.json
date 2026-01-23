@@ -1,8 +1,8 @@
 {
 "rewrites": [
 {
-"source": "/contratar",
-"destination": "/contratar.html"
+"source": "/login",
+"destination": "/login.html"
 
 }
 
