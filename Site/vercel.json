@@ -2,7 +2,7 @@
 "rewrites": [
 {
 "source": "/login",
-"destination": "/login.html"
+"destination": "/login.php"
 
 }
 
