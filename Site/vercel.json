@@ -1,8 +1,8 @@
 {
 "rewrites": [
 {
-"source": "/login",
-"destination": "/login.php"
+"source": "/presets",
+"destination": "Página Presets/presets.html"
 
 }
 

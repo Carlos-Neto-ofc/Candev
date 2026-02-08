@@ -10,28 +10,34 @@ text-decoration: none;
 color: white;
 }
 body{
-background-color: rgb(46, 46, 53);
+background-color: #00D1FF;
+display: flex;
+justify-content: flex-end;
+position: relative;
+overflow: hidden;
 }
 
 nav{
-width: 100%;
+width: 102%;
 height: 80px;
     background-color: black;
 position: absolute;
-left: -01px;
-top: -0px;
+left: -09px;
+top: -09px;
 display: flex;
 align-items: center;
 overflow: hidden;
+display: flex;
+justify-content: center;
 }
 .logo{
 width: 100px;
 height: 100px;
-background-image: url('Logo/NovaLogo.png');
+background-image: url('/Logo/NovaLogo.png');
 background-repeat: no-repeat;
 background-size: cover;
 position: absolute;
-margin-left: 40px;
+left: 40px;
 filter: brightness(100);
 
 }
@@ -49,13 +55,13 @@ gap: 50px;
 .textos{
 width: 900px;
     position: absolute;
-left: 170px;
+margin-left: 390px;
 color: white;
 }
-.text1{
+.text4{
 position: relative;
 }
-.text1::after{
+.text4::after{
     content: "";
     width: 40px;
     height: 5px;
@@ -137,12 +143,12 @@ color: transparent;
     opacity: 1;
 }
 
-.text4{
+.text1{
 position: relative;
 transition: color .3s ease-in-out;
 color: white;
 }
-.text4:after{
+.text1:after{
 content: "";
 width: 0px;
 height: 5px;
@@ -152,11 +158,11 @@ left: 0px;
 top: 17px;
 transition: all .3s ease-in-out;
 }
-.text4:hover::after{
+.text1:hover::after{
 width: 100%;
 }
-.text4::before{
-content: "login";
+.text1::before{
+content: "inicio";
 position: absolute;
 width: 100%;
 height: 100%;
@@ -167,10 +173,10 @@ color: transparent;
 opacity: 0;
 transition: opacity .3s ease-in-out;
 }
-.text4:hover{
+.text1:hover{
 color: transparent;
 }
-.text4:hover::before{
+.text1:hover::before{
     opacity: 1;
 }
 
@@ -210,4 +216,117 @@ color: transparent;
 }
 .text5:hover::before{
     opacity: 1;
+}
+input{
+    width: 230px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid rgb(66, 66, 66);
+    position: absolute;
+
+border-radius: 15px;
+outline: none;
+caret-color: blue;
+transition: border-color .3s ease;
+padding-left: 20px;
+
+}
+input:focus{
+    border-color: blue;
+}
+form{
+    width: 440px;
+    height: 101%;
+    background-color: rgb(17, 17, 17);
+position: fixed;
+top: -10px;
+margin-right: -20px;
+z-index: -1;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.senha{
+    top: 70px;
+}
+.inputs{
+position: relative;
+top: -40px;
+}
+input::placeholder{
+    position: absolute;
+    left: 20px;
+}
+button{
+    background-color: blue;
+    border: none;
+    width: 235px;
+    height: 50px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 12px;
+top: 190px;
+left: 10px;
+box-shadow: 0 0 10px 0 blue;
+}
+label{
+    position: absolute;
+color: rgb(140, 140, 140);
+}
+.placeholder1{
+font-size: 80%;
+top: 17px;
+left: 20px;
+pointer-events: none;
+transition: .3s ease;
+}
+.placeholder2{
+top: 87px;
+    font-size: 80%;
+left: 20px;
+pointer-events: none;
+transition: .3s ease;
+}
+.email:focus + .placeholder1,
+.email:not(:placeholder-shown) + .placeholder1{
+width: 40px;
+    background-color: rgb(17, 17, 17);
+font-size: 61%;
+color: rgb(0, 100, 255);
+top: -05px;
+text-align: center;
+}
+.senha:focus + .placeholder2,
+.senha:not(:placeholder-shown) + .placeholder2
+{
+width: 40px;
+    background-color: rgb(17, 17, 17);
+font-size: 61%;
+color: rgb(0, 100, 255);
+top: 64px;
+text-align: center;
+}
+input:invalid{
+    border-color: red;
+}
+h1{
+position: absolute;
+top: 220px;
+width: 220px;
+left: 130px;
+}
+.imagem{
+width: 535px;
+height: 876px;
+background-image: url('Imagens/imagem.png');
+background-color: #00D1FF;
+position: absolute;
+left: -10px;
+top: 70px;
+z-index: -1;
+background-size: 130%;
+background-position: -80px;
+
 }

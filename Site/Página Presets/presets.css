@@ -7,10 +7,14 @@
 *{
     font-family: 'Montaser', 'Poppins', 'Montsserrat';
 text-decoration: none;
-color: white;
 }
 body{
 background-color: rgb(46, 46, 53);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+color: white;
 }
 
 nav{
@@ -27,7 +31,7 @@ overflow: hidden;
 .logo{
 width: 100px;
 height: 100px;
-background-image: url('Logo/NovaLogo.png');
+background-image: url('/Logo/NovaLogo.png');
 background-repeat: no-repeat;
 background-size: cover;
 position: absolute;
@@ -50,14 +54,14 @@ gap: 50px;
 width: 900px;
     position: absolute;
 left: 170px;
-color: white;
 }
-.text1{
+.text3{
 position: relative;
+cursor: default;
 }
-.text1::after{
+.text3::after{
     content: "";
-    width: 40px;
+    width: 100%;
     height: 5px;
     background: blue;
     position: absolute;
@@ -100,12 +104,12 @@ color: transparent;
 .text2:hover::before{
     opacity: 1;
 }
-.text3{
+.text1{
 position: relative;
 transition: color .3s ease-in-out;
 color: white;
 }
-.text3:after{
+.text1:after{
 content: "";
 width: 0px;
 height: 5px;
@@ -115,11 +119,11 @@ left: 0px;
 top: 17px;
 transition: all .3s ease-in-out;
 }
-.text3:hover::after{
+.text1:hover::after{
 width: 100%;
 }
-.text3::before{
-content: "presets";
+.text1::before{
+content: "inicio";
 position: absolute;
 width: 100%;
 height: 100%;
@@ -130,10 +134,10 @@ color: transparent;
 opacity: 0;
 transition: opacity .3s ease-in-out;
 }
-.text3:hover{
+.text1:hover{
 color: transparent;
 }
-.text3:hover::before{
+.text1:hover::before{
     opacity: 1;
 }
 
@@ -210,4 +214,105 @@ color: transparent;
 }
 .text5:hover::before{
     opacity: 1;
+}
+.container1{
+width: 500px;
+height: 600px;
+background-color: grey;
+border-radius: 50px;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+pointer-events: none;
+}
+.container1::before{
+content: "";
+    width: 71%;
+height: 150%;
+background: linear-gradient(blue, rgb(195, 0, 255));
+position: absolute;
+animation: animate 3s linear infinite;
+}
+@keyframes animate{
+100%{
+    transform: rotate(360deg);
+}
+}
+.container1::after{
+width: 98%;
+height: 98%;
+position: absolute;
+content: "";
+background-color: black;
+border-radius: 50px;
+top: 06px;
+}
+.texts1{
+position: absolute;
+height: 300px;
+width: 200px;
+background-color: rgb(24, 24, 24);
+    z-index: 1;
+ 
+border-radius: 30px;
+overflow: hidden;
+pointer-events: none;
+
+}
+h1{
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
+h3{
+position: relative;
+left: 40px;
+top: 40px;
+}
+
+h5{
+    position: relative;
+color: white;
+left: 40px;
+top: -035px;
+}
+h2{
+position: relative;
+top: -10px;
+font-size: 114%;
+left: 40px;
+}
+
+h1, h2, h3, h4, h5{
+    pointer-events: none;
+}
+.precos1{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    z-index: 1;
+    top: 304px;
+border-radius: 20px;
+background-color: rgb(24, 24, 24);
+display: flex;
+justify-content: center;
+}
+.juntar1{
+    position: absolute;
+    top: 90px;
+    left: 160px;
+
+}
+.valor1{
+position: absolute;
+left: 75px;
+
+}
+.rs1{
+position: absolute;
+top: -4px;
+left: 87px;
 }
