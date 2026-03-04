@@ -10,7 +10,7 @@ text-decoration: none;
 color: white;
 }
 body{
-background-color: #00D1FF;
+background-color: rgba(0, 40, 70, 100%);
 display: flex;
 justify-content: flex-end;
 position: relative;

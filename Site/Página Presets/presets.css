@@ -252,8 +252,8 @@ top: 06px;
 .texts1{
 position: absolute;
 height: 300px;
-width: 200px;
-background-color: rgb(24, 24, 24);
+width: 700px;
+
     z-index: 1;
  
 border-radius: 30px;
@@ -291,12 +291,12 @@ h1, h2, h3, h4, h5{
 .precos1{
     width: 200px;
     height: 100px;
-    background-color: blue;
+
     position: absolute;
     z-index: 1;
     top: 304px;
 border-radius: 20px;
-background-color: rgb(24, 24, 24);
+
 display: flex;
 justify-content: center;
 }
