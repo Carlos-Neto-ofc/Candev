@@ -23,6 +23,7 @@ nav.classList.add('j');
 ul.classList.add('a');
 logo.classList.add('d');
 body.classList.add('overf');
+menu.classList.toggle('cel')
 }
 }
 Verificar();

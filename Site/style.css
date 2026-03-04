@@ -238,6 +238,7 @@ background-color: white;
 position: absolute;
 transition: transform .3s ease-in-out;
 z-index: 50;
+opacity: 0;
 }
 .menu::after{
 content: "";
@@ -266,8 +267,11 @@ display: flex;
 
 .menu.o{
 transform: rotate(90deg);
+opacity: 1;
 }
-
+.menu.cel{
+    opacity: 1;
+}
 body.overf{
 overflow: hidden;
 }
