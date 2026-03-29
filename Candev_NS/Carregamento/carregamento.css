@@ -1,0 +1,68 @@
+body{
+    background-color: wheat;
+display: flex;
+height: 90vh;
+align-items: center;
+justify-content: center;
+}
+.car{
+width: 500px;
+height: 5px;
+background-color: white;
+border-radius: 50px;
+position: absolute;
+animation: after 1s ease-out forwards  4s ;
+}
+.car::after{
+content: "";
+width: 0px;
+height: 5px;
+background-color: orange;
+border-radius: 50px;
+position: absolute;
+animation: before 4s linear forwards, after 1s ease-out forwards 4s;
+
+
+}
+@keyframes after{
+from { width: 550px; }
+to { width: 0px; }
+}
+
+@keyframes before{
+from { width: 0;}
+to {width: 500px; }
+}
+.ok{
+background-color: orange;
+width: 0px;
+height:15px;
+transform: rotate(60deg);
+position: absolute;
+left: 893px;
+border-radius: 50px;
+top:  430px;
+animation: ok 1s ease-in-out forwards 5s;
+}
+.ok::after{
+content: "";
+    width: 0px;
+    height: 15px;
+background-color: orange;
+position: absolute;
+transform: rotate(-110deg);
+left: 59px;
+top: 05px;
+transform-origin: left;
+border-radius: 50px;
+animation: oka 1s ease-in-out forwards 6s;
+}
+
+@keyframes oka{
+    from { width: 0;}
+    to { width: 130px; }
+}
+@keyframes ok{
+    from { width: 0;}
+    to { width: 65px; }
+}

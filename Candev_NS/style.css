@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&');
+body {
+    display: flex;
+    justify-content: center;
+    background-color: wheat;
+overflow: hidden;
+overflow-x: hidden;
+scroll-behavior: smooth;
+height: 400vh;
+}
+body.scroll{
+
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: white;
+    width: 90%;
+    height: 100px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.22);
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    position: fixed;
+}
+
+.logo {
+    background-image: url('Logo/NovaLogo.png');
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+    margin-left: 20px;
+    position: absolute;
+    transform: translateX(-500px);
+    filter: drop-shadow(520px 0 0 orange);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    left: 530px;
+    font-weight: 700;
+    color: orange;
+    top: 35px;
+cursor: pointer;
+}
+
+.li1 {
+    position: absolute;
+    left: 0px;
+}
+
+.li1::after {
+    width: 100%;
+    content: "";
+    background-color: orange;
+    position: absolute;
+    height: 5px;
+    left: 0;
+    top: 19px;
+}
+
+/*-------------------------------------------------*/
+.li2 {
+    position: absolute;
+    left: 100px;
+}
+
+.li2::after {
+    width: 0;
+    content: "";
+    background-color: orange;
+    position: absolute;
+    height: 5px;
+    left: 0;
+    top: 19px;
+    transition: width .2s ease-in-out;
+}
+.li2:hover::after{
+width: 100%;
+}
+
+/*-------------------------------------------------*/
+.li3 {
+    position: absolute;
+    left: 200px;
+}
+
+.li3::after {
+    width: 0;
+    content: "";
+    background-color: orange;
+    position: absolute;
+    height: 5px;
+    left: 0;
+    top: 19px;
+transition: width .2s ease-in-out;
+}
+.li3:hover::after{
+width: 100%;
+}
+/*-------------------------------------------------*/
+.li4 {
+    position: absolute;
+    left: 330px;
+}
+.li4::after {
+    width: 0;
+    content: "";
+    background-color: orange;
+    position: absolute;
+    height: 5px;
+    left: 0;
+    top: 19px;
+transition: width .2s ease-in-out;
+}
+
+.li4:hover::after{
+width: 100%;
+}
+/*-------------------------------------------------*/
+.li5 {
+    position: absolute;
+    left: 460px;
+}
+.li5::after {
+    width: 0;
+    content: "";
+    background-color: orange;
+    position: absolute;
+    height: 5px;
+    left: 0;
+    top: 19px;
+transition: width .2s ease-in-out;
+}
+.li5:hover::after{
+width: 100%;
+}
+/*-------------------------------------------------*/
+.li6 {
+    position: absolute;
+    left: 570px;
+}
+.li6::after {
+    width: 0;
+    content: "";
+    background-color: orange;
+    position: absolute;
+    height: 5px;
+    left: 0;
+    top: 19px;
+transition: width .2s ease-in-out;
+}
+.li6:hover::after{
+width: 100%;
+}
+/*-------------------------------------------------*/
+.li7 {
+    position: absolute;
+    left: 650px;
+}
+.li7::after {
+    width: 0;
+    content: "";
+    background-color: orange;
+    position: absolute;
+    height: 5px;
+    left: 0;
+    top: 19px;
+transition: width .2s ease-in-out;
+}
+.li7:hover::after{
+width: 100%;
+}
+/*-------------------------------------------------*/
+
+.li8 {
+    position: absolute;
+    left: 770px;
+}
+.li8::after {
+    width: 0;
+    content: "";
+    background-color: orange;
+    position: absolute;
+    height: 5px;
+    left: 0;
+    top: 19px;
+transition: width .2s ease-in-out;
+}
+.li8:hover::after{
+width: 100%;
+}
+
+.widget{
+width: 180px;
+height: 50px;
+background-color: white;
+position: fixed;
+top: 800px;
+font-size: 70%;
+align-items: center;
+display: flex;
+justify-content: center;
+color: orange;
+border-radius: 17px;
+cursor: pointer;
+transition: width .3s ease-in-out, height .3s ease-in-out;
+}
+
+.widget:hover{
+    width: 200px;
+    height: 60px;
+}
+
+
+.aqvc{
+    position: absolute;
+    top: 300px;
+    left: 160px;
+    width: 500px;
+  line-height: 1.7;
+font-size: 300%;
+font-family: 'Inter';
+font-weight: 600;
+color: rgb(206, 125, 19);
+transition: opacity .3s ease-in-out;
+opacity: 1;
+}
+.texts{
+      padding-right: 5px;
+ border-right: 3px solid orange;
+    animation: piscar 0.7s step-end infinite;
+    font-family: 'Inter';
+font-weight: 700;
+color: orange;
+}
+@keyframes piscar {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+
+}
+.aqvc.esconder{
+opacity: 0;
+}
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+/* 2. O Pegador (Thumb) - O objeto flutuante */
+::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 20px; /* Deixa formato de pílula */
+    
+    /* Cria a distância da borda direita da tela e do topo/baixo */
+    border: 4px solid transparent; 
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar {
+    width: 16px; 
+}
+
+/* 4. Efeito de Hover para dar feedback ao usuário */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e68a00;
+}
+.vm{
+    width: 440px;
+    height: 500px;
+    background-color: rgb(206, 125, 19);
+    position: absolute;
+    left: 1400px;
+top: 240px;
+border-radius: 50px;
+z-index: 1;
+opacity: 1;
+transition: opacity .3s ease-in-out;
+backdrop-filter: blur(15px);
+}
+.vm::before{
+    content: "";
+    width: 400px;
+    height: 100px;
+    background-color: rgb(206, 125, 19);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}
+.vm::after{
+    content: "";
+    width: 400px;
+    height: 430px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+border-radius: 40px;
+z-index: -1;
+}
+
+
+h3{
+    font-size: 140%;
+    width: 400px;
+    text-align: center;
+font-family: 'Montserrat';
+color: white;
+position: absolute;
+top: 34px;
+left: 20px;
+font-weight: 600;
+}
+.seta{
+   width: 0;
+   height: 0;
+    border-left: 20px solid transparent;  /* Lado esquerdo invisível */
+  border-right: 20px solid transparent; /* Lado direito invisível */
+  border-top: 30px solid rgb(206, 125, 19);
+  position: absolute;
+  top: 280px;
+  left: 210px; 
+cursor: pointer;
+}
+
+.seta::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 5px solid rgb(206, 125, 19);
+    border-radius: 90%;
+top: -60px;
+    left: -45px;
+}
+.vm.desapears{
+opacity: 0;
+}
+h4{
+position: absolute;
+top: 1000px;
+font-size: 200%;
+color: orange;
+font-family: 'Roboto';
+}
+h5{
+position: absolute;
+top: 1060px;
+font-size: 120%;
+color: orange;
+font-family: 'Roboto';
+    opacity: 0.7;
+    font-weight: 400;   
+    width: 700px;
+    text-align: center;
+}
+.c1{
+position: absolute;
+top: 1300px;
+width: 100px;
+height: 100px;
+background-color: white;
+
+}
