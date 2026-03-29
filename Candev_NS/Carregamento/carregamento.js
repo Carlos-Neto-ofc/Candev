@@ -4,7 +4,7 @@ setTimeout(function() {
     sessionStorage.setItem('carregamento_concluido', 'true');
     
   
-    window.location.replace("/index.html");
+    window.location.replace("/");
 }, 7000);
 
 document.addEventListener('keydown', function (e) {

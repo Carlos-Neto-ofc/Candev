@@ -3,6 +3,11 @@
 {
 "source": "/carregamento",
 "destination": "/Carregamento/carregamento.html"
+},
+{
+"source": "/",
+"destination": "/index.html"
+
 }
 ]
 }
